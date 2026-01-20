@@ -57,6 +57,25 @@ tracksuit new my-app \
   --infra docker
 ```
 
+**TOML Config Mode:**
+```bash
+tracksuit new my-app --config tracksuit.toml
+```
+
+With a `tracksuit.toml` file:
+```toml
+[project]
+name = "my-app"
+frontend = "nextjs"
+backend = "hono"
+database = "postgres"
+infrastructure = "docker"
+
+[llm]
+backend = "anthropic"
+model = "claude-3-5-sonnet"
+```
+
 ---
 
 ## 🏗️ Supported Stacks
