@@ -130,7 +130,7 @@ tracksuit uses LLMs to intelligently generate project structures based on your c
 ### Supported LLM Backends
 
 - **Anthropic Claude 4.5** (via API)
-- **Gemini 3** (via API)
+- **Google Gemini 3** (via API)
 - **OpenAI GPT-5** (via API)
 - **Local Models** (via llama.cpp, Ollama)
 
