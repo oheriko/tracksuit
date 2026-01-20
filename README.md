@@ -129,10 +129,10 @@ tracksuit uses LLMs to intelligently generate project structures based on your c
 
 ### Supported LLM Backends
 
-- **Anthropic Claude** (via API)
-- **OpenAI GPT-4** (via API)
+- **Anthropic Claude 4.5** (via API)
+- **Gemini 3** (via API)
+- **OpenAI GPT-5** (via API)
 - **Local Models** (via llama.cpp, Ollama)
-- **Qwen3/Qwen3-VL** (local inference)
 
 ### Configuration
 
@@ -142,7 +142,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
 # Or use local models
 tracksuit config set llm.backend local
-tracksuit config set llm.model qwen3
+tracksuit config set llm.model ministral3
 ```
 
 ### How It Works
@@ -322,7 +322,7 @@ OPENAI_API_KEY=sk-...
 
 # Local LLM Settings
 TRACKSUIT_LLM_BACKEND=local  # or 'anthropic', 'openai'
-TRACKSUIT_LLM_MODEL=qwen3    # model name
+TRACKSUIT_LLM_MODEL=ministral3    # model name
 
 # Generation Settings
 TRACKSUIT_TEMPLATES_PATH=~/.tracksuit/templates
